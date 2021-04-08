@@ -1,0 +1,26 @@
+App({
+  num:123,
+  test:function(){
+    console.log('test')
+  },
+  onLaunch:function(options){
+    console.log('onLaunch执行,初始化完成')
+    console.log(options)
+  },
+  onShow:function(options){
+    console.log('onShow执行，启动，从后台进入前台显式')
+    console.log(options)
+  },
+  onHide:function(options){
+    console.log('onHide执行,从前台进入后台')
+    console.log(options)
+  },
+  onError:function(options){
+    console.log('onError执行，脚本错误')
+    console.log(options)
+  },
+  onPageNotFound:function(options){
+    console.log('onPageNotFound执行，页面不存在')
+    console.log(options)
+  },
+})

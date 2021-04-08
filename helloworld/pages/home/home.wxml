@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view>
+  <button bindtap="jumpBack">跳转回上一个页面</button>
+</view>
+<text class="SecondFont">这是第二个页面</text>

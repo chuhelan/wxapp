@@ -1,0 +1,29 @@
+<!--pages/index/index.wxml-->
+<view>
+  <text>请输入第一个数</text>
+  <input type="number" bindchange="change2" data-id="num1"/>
+</view>
+<view>
+  <text>请输入第二个数字</text>
+  <input type="number" bindchange="change2" data-id="num2" />
+</view>
+
+<button bindtap="compare">比较</button>
+<view>
+  <text>比较结果: {{result}}</text>
+</view>
+
+<view bindtap="viewtap" id="outer">
+  outer
+  <view id="inner">inner</view>
+</view>
+
+<view bindtap="outer" id="outer">
+  outer
+  <view catchtap='middleTap'>
+    middle
+    <view id="inner" bindtap="innerTap">inner</view>
+  </view>
+</view>>
+
+<view style="height:600px;border:2rpx solid #ccc">view</view>

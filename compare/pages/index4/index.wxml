@@ -1,0 +1,16 @@
+<!--pages/index/index.wxml-->
+<view>
+  <text>请输入第一个数</text>
+  <input type="number" bindchange="change3" data-id="num1" />
+</view>
+<view>
+  <text>请输入第二个数字</text>
+  <input type="number" bindchange="change3" data-id="num2" />
+</view>
+
+<!-- <button bindtap="compare">比较</button> -->
+<view>
+  <block wx:if="{{num1>num2}}"><text>比较结果：第一个数大</text></block>
+  <block wx:elif="{{num1<num2}}"><text>比较结果：第二个数大</text></block>
+  <block wx:else><text>比较结果：两数相等</text></block>
+</view>
