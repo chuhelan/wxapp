@@ -1,0 +1,11 @@
+<!--pages/index/index.wxml-->
+<view class="tishi">
+  <text>登录</text>
+</view>
+<view class="tishi2">
+  <text>请输入用户名和密码进行登录</text>
+</view>
+
+<input type="text">用户名</input>
+<input type="password">密码</input>
+<button bindtap="login">登录</button>

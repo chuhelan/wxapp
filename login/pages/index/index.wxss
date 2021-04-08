@@ -1,0 +1,40 @@
+/* pages/index/index.wxss */
+input {
+  margin-left: 120rpx;
+  margin-right: 120rpx;
+  margin-top: 20rpx;
+  padding:60rpx;
+  margin-bottom: 20rpx;
+  background-color: #F8F8F8;
+  border: 1rpx solid #E7EAED;
+  border-radius: 30rpx;
+}
+
+button {
+  margin-top: 80rpx;
+  width: 80%;
+  color: white;
+  border-radius: 98rpx;
+  background-color: #07C160;
+}
+
+.tishi {
+  margin-top: 200rpx;
+  /* margin: 50rpx; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tishi>text:first-child {
+  font-size: 30px;
+}
+
+.tishi2 {
+  padding-top: 20rpx;
+  color: #46546e;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
