@@ -1,46 +1,24 @@
-// pages/index1/index.js
+// pages/index/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [{
-      id: 1,
-      name: '上证指数 1A0001',
-      content: "3416.68"
-    }, {
-      id: 2,
-      name: '贵州茅台 600519',
-      content: "2047.00"
-
-    }, {
-      id: 3,
-      name: '中国人寿 601628',
-      content: "30.65"
-
-    }, {
-      id: 4,
-      name: '隆基股份 601012',
-      content: "82.13"
-
-    }
-      , {
-      id: 5,
-      name: '丽人丽妆 605136',
-      content: "35.90"
-    }
-      , {
-      id: 6,
-      name: '三一重工 600031',
-      content: "31.53"
-    }]
+    item: 0,
+    tab: 0,
   },
 
-  click: function (e) {
-    console.log("按了：", e.currentTarget.id)
+  changeItem:function(e){
+    this.setData({
+      item:e.target.dataset.item
+    })
   },
-
+  changeTab:function(e){
+    this.setData({
+      tab:e.detail.current
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

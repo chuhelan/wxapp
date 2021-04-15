@@ -14,7 +14,7 @@ page {
   position: absolute;
   font-size: 27pt;
   bottom: 5vh;
-  right: 5vw;
+  right: 3vw;
 }
 .result-op{
   font-size: 15pt;
@@ -51,11 +51,11 @@ page {
   justify-content: center;
 }
 
-.btn>view:last-child>view:first-child {
+.btns>view:last-child>view:first-child {
   flex-basis: 50%;
 }
 
-.btn>view:first-child>view:first-child {
+.btns>view:first-child>view:first-child {
   color: #f00;
 }
 

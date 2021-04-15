@@ -1,2 +1,21 @@
 <!--pages/index1/index.wxml-->
-<text>pages/index1/index.wxml</text>
+<block wx:for="{{list}}" wx:key="index">
+
+<!-- 包裹图片+两行文字 id="{{index}}"是给按下了那个item记录-->
+
+<view class="view_tupian_wenzi" bindtap="click" id="{{index}}">
+
+  <image class="image_1" src="agu.jpg" />
+  
+  <!-- 包裹两行文字 -->
+  <view class="view_wenzi2">
+  
+    <text>{{item.name}}</text>
+    
+    <text class="text_small">{{item.content}}</text>
+    
+  </view>
+  
+</view>
+
+</block>
