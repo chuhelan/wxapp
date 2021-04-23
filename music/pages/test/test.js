@@ -8,7 +8,11 @@ Page({
 
   },
 
-  scroll:function(e){
+  sliderChanging: function (e) {
+    console.log(e.detail.value)
+  },
+
+  scroll: function (e) {
     console.log(e.detail)
   },
 
