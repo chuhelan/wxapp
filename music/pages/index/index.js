@@ -42,6 +42,15 @@ Page({
     }
   },
 
+  // 切换上一曲
+  last: function () {
+    var index = this.data.playIndex < this.data.playlist.length-3 ? this.data.playlist.length - 1 :this.data.playIndex -1;
+    this.setMusic(index)
+    if (this.data.state === 'running') {
+      this.play()
+    }
+  },
+
   changeItem: function (e) {
     this.setData({
       item: e.target.dataset.item
@@ -52,6 +61,12 @@ Page({
       tab: e.detail.current
     })
   },
+
+  change: function (e) {
+    this.setMusic(e.currentTarget.dataset.index)
+    this.play()
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
