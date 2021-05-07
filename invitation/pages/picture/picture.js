@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    imgUrls: [
+      '/images/timg1.jpg', '/images/timg2.jpg', '/images/timg3.jpg', '/images/timg4.jpg'
+    ],
+    imgu: '/images/timg2.jpg'
   },
 
   /**
