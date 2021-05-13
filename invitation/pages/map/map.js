@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    latitude:40.06021,
+    longitude:116.3433,
+    markerts:[{
+      iconPath:'/images/navi.png',id:0,
+      latitude:40.06021,
+      longitude:116.3433,
+      width:50,
+      height:50
+    }]
+  },
+  markertap:function(){
+    wx.openLocation({
+      latitude: this.data.latitude,
+      longitude: this.data.longitude,
+      name:'红点国际大酒店',
+      address:'北京市 海淀区 富国中路1号'
+    })
   },
 
   /**
@@ -55,6 +71,19 @@ Page({
    */
   onReachBottom: function () {
 
+  },
+  buttonTap:function(){
+    wx.getLocation({
+      type:'gcj02',
+      success:function(res){
+        wx.openLocation({
+          latitude: res,
+          latitude,
+          longitude: res,
+          longitude,
+        })
+      }
+    })
   },
 
   /**

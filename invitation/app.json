@@ -2,6 +2,11 @@
   "requiredBackgroundModes": [
     "audio"
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取你的地理位置"
+    }
+  },
   "pages": [
     "pages/index/index",
     "pages/picture/picture",
