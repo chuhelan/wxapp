@@ -1,1 +1,19 @@
 <!--pages/guest/guest.wxml-->
+<image class="bg" src="/images/bj_2.png"></image>
+<form bindsubmit="formSubmit">
+  <view class="content">
+    <view>
+      <input name="name" placeholder-class="phcolor" placeholder="输入您的姓名" />
+    </view>
+    <view>
+      <input name="phone" placeholder-class="phcolor" placeholder="输入您的手机号" />
+    </view>
+    <view>
+      <picker name="num" bindchange="pickerchange" value="{{picker.index}}" range="{{picker.arr}}">参加婚礼的人数：{{picker.arr[picker.index]}}</picker>
+    </view>
+    <view>
+      <input name="wish" placeholder-class="phcolor" placeholder="输入您的祝福语" />
+    </view>
+    <button form-type="submit">提交</button>
+  </view>
+</form>
