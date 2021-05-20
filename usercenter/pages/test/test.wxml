@@ -1,0 +1,5 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+<button bindtap="chooseImage">wx.chooseImage()</button>
+<button bindtap="chooseAddress">wx.chooseAddress()</button>
+<button bindtap="makePhoneCall">wx.makePhoneCall()</button>

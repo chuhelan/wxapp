@@ -1,0 +1,12 @@
+<view class="nav">
+  <text class="welcome">欢迎来到我的个人页</text>
+  <image src="/images/avatar.jpg" mode="aspectFill" bindtap="changeImage"></image>
+
+</view>
+<view class="content">
+  <view>昵称：我不是文丽</view>
+  <view>星座：天秤座</view>
+  <view>兴趣：极限运动</view>
+  <view>QQ：904327928</view>
+  <view>电话：18961635037</view>
+</view>
